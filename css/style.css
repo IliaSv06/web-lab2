@@ -1,0 +1,88 @@
+
+body {
+    background-color: #0d0d0d;
+    color: #3f3;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+
+.story-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.story-text {
+    width: 50%;
+    text-align: left;
+}
+
+.photo-column {
+    width: 50%;
+    text-align: center;
+}
+
+.hacker-img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3f3;
+    box-shadow: 0 0 10px #3f3;
+}
+
+@media (max-width: 768px) {
+    .story-container {
+        flex-direction: column;
+    }
+
+    .story-text, .photo-column {
+        width: 100%;
+    }
+}
+
+
+.btn-primary {
+    background-color: #3f3;
+    border: none;
+    color: #0d0d0d;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #28cc28;
+    color: #0d0d0d;
+}
+
+.hacker-input {
+    background-color: #0d0d0d;
+    border: 1px solid #3f3;
+    color: #3f3;
+    padding: 0.5rem;
+    font-family: 'Courier New', monospace;
+}
+
+.hacker-input::placeholder {
+    color: #3f3;
+    opacity: 0.7;
+}
+
+.hacker-input:focus {
+    background-color: #0d0d0d;
+    border-color: #28cc28;
+    box-shadow: 0 0 5px #3f3;
+    color: #3f3;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    color: #3f3;
+    margin-bottom: 0.5rem;
+}
